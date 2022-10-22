@@ -23,7 +23,7 @@ symlink() {
 
 cd $HOME
 
-for file in .bash_profile .bashrc .hgrc .tmux.conf .vim .vimrc .zprofile .zshrc; do
+for file in .bash_profile .bashrc .tmux.conf .vimrc .zprofile .zshrc; do
     target="${HOME}/${file}"
     if [ ! -d "$target" ]; then
         backup $target
